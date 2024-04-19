@@ -22,7 +22,7 @@ body {
     background-color: var(--almost-white)
 }
 
-body.menu-open::before {
+body.escurecer::before {
 content: "";
 position: fixed;
 height: 100vh;
@@ -60,12 +60,18 @@ z-index: 1;
     flex-direction: column;
     padding: 1.5rem;
     gap: 1.5rem;
+
+    transition: 0.7s;
 }
 
 .header-mobile nav button {
    align-self: auto;
    margin-bottom: 4rem;
-}s
+}
+
+.header-mobile nav.abrir {
+    right: 0;
+}
 
 .header-mobile nav a {
     text-decoration: none ;
